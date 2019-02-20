@@ -10,6 +10,6 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './style-green.css';
 
 ReactDOM.render(<div />, document.getElementById('root'));
