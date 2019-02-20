@@ -12,7 +12,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style-green.css';
 
-ReactDOM.render(<div />, document.getElementById('root'));
 function MyInfo() {
   return (
     <div className="widget-sidebar">
@@ -26,3 +25,5 @@ function MyInfo() {
     </div>
   )
 }
+
+ReactDOM.render(<MyInfo />, document.getElementById('root'));
