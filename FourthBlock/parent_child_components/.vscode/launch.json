@@ -17,7 +17,7 @@
         "run-script",
         "start"
       ],
-      "port": 2504
+      "port": 3000
     },
     {
       "type": "node",
@@ -28,7 +28,7 @@
         "run-script",
         "build"
       ],
-      "port": 2604
+      "port": 3000
     }
   ]
 }
