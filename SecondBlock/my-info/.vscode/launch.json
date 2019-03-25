@@ -4,6 +4,17 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Debug via NPM",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "port": 2999
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "Launch via NPM",
       "runtimeExecutable": "npm",
       "runtimeArgs": [
@@ -21,7 +32,7 @@
         "run-script",
         "build"
       ],
-      "port": 3000
+      "port": 3001
     }
   ]
 }
