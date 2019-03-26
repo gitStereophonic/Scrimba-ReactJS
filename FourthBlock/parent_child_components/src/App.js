@@ -1,21 +1,27 @@
+/* 
+ * @author Raccoon Developer
+ * @date 03.25.2019
+ *
+ * Task for "Parent/Child component" topic
+ * Set up the React app from scratch
+ * Render an App component (defined in a separate file)
+ * Inside App, render:
+ *  * 1. A Navbar component
+ *  * 2. A MainContent component
+ *  * 3. A Footer component
+ */
+
 import React from 'react';
 
-import Footer from './Footer'
+import NavBar from './components/NavBar'
+import MainContent from './components/MainContent'
+import Footer from './components/Footer'
 
 function App() {
   return (
     <div>
-      <nav>
-        <h1>Hello a third time!</h1>
-        <ul>
-          <li>Thing 1</li>
-          <li>Thing 2</li>
-          <li>Thing 3</li>
-        </ul>
-      </nav>
-      <main>
-        <p>This is were most of my content will go...</p>
-      </main>
+      <NavBar />
+      <MainContent />
       <Footer />
     </div>
   );
