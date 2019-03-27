@@ -1,28 +1,33 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/* 
+ * @author Raccoon Developer
+ * @date 03.26.2019
+ *
+ * Task Todo-app Phase 1
+ * From scratch, initialize the React app
+ * Render an <App /> component
+ * Create the <App /> component from scratch
+ * Have the <App /> component render 3 or 4 checkboxes with paragraphs or spans next to it
+ * like you're making a todo list with some hard-coded items on it
+ */
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+import React from 'react';
+
+function App() {
+  return (
+    <div>
+      <input type='checkbox' />
+      <p>Task #1</p>
+
+      <input type='checkbox' />
+      <p>Task #2</p>
+
+      <input type='checkbox' />
+      <p>Task #3</p>
+
+      <input type='checkbox' />
+      <p>Task #4</p>
+    </div>
+  );
 }
 
 export default App;
