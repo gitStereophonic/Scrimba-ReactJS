@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer>This is some footer shit...</footer>
+    <footer className='footer'>This is some footer shit...</footer>
   );
 }
 
