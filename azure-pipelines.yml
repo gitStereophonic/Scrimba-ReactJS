@@ -1,0 +1,28 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+
+trigger:
+- master
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+
+- script: |
+    for blockname in /*; do
+      echo "$blockname"
+      cd "$blockname"
+      for projectname in /"$blockname"/*; do
+        cd "$projectname"
+        npm install
+        npm run build
+        cd ..
+      done
+      cd ..
+    done
+  displayName: 'npm install and build'
