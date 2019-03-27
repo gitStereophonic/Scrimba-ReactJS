@@ -1,0 +1,8 @@
+{
+  "short_name": "Styling React App",
+  "name": "Lesson 12. Styling React App with CSS",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
