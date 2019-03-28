@@ -1,0 +1,8 @@
+{
+  "short_name": "Inline styles",
+  "name": "Lesson 15. Inline styles with the Style Property",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
