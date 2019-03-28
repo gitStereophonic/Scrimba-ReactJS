@@ -1,0 +1,8 @@
+{
+  "short_name": "Some Caveats",
+  "name": "Lesson 13. Some Caveats",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
