@@ -1,0 +1,8 @@
+{
+  "short_name": "Props and Styling Practice",
+  "name": "Lesson 20. Props and Styling Practice",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
