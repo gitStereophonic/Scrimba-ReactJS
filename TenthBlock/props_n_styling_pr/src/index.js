@@ -15,3 +15,12 @@
  * If you don't pass in a "question" prop, how might you make it only show the punchline instead?
  * Spend time practicing the style of your Joke component
  */
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import './style.css';
+
+import App from './App';
+
+ReactDOM.render(<App />, document.getElementById("root"))
