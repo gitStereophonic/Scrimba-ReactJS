@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react";
 
 /*
  * @author Raccoon Developer
@@ -11,12 +11,27 @@ import React from "react"
  * or "out" if the user is logged out.
  */
 
-function App() {
-  return (
-    <div>
-      <h1>You are currently logged (in/out)</h1>
-    </div>
-  )
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoggedIn: false
+    };
+  }
+
+  render() {
+    let loginStatus;
+    if (this.state.isLoggedIn)
+      loginStatus = 'in';
+    else
+      loginStatus = 'out';
+
+    return (
+      <div>
+        <h1>You are currently logged {loginStatus}</h1>
+      </div >
+    );
+  }
 }
 
-export default App
+export default App;
