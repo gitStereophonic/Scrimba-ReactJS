@@ -1,0 +1,8 @@
+{
+  "short_name": "Mapping Components Practice",
+  "name": "Lesson 22. Mapping Components Practice",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
