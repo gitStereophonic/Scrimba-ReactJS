@@ -1,4 +1,4 @@
-import React from "react"
+import React, { Component } from "react";
 
 /*
  * @author Raccoon Developer
@@ -9,13 +9,23 @@ import React from "react"
  * add a constructor and initialize state to fix the broken component.
  */
 
-class App extends Component() {
-  return(
-        <div>
-  <h1>{this.state.name}</h1>
-  <h3>{this.state.age} years old</h3>
-        </div >
-    )    
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      name: 'Sergey',
+      age: 25
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.state.name}</h1>
+        <h3>{this.state.age} years old</h3>
+      </div >
+    );
+  }
 }
 
-export default App
+export default App;
