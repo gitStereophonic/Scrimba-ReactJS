@@ -1,0 +1,8 @@
+{
+  "short_name": "Class-based Components",
+  "name": "Lesson 24. Class-based Components",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
