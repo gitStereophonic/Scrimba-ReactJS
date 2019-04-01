@@ -10,16 +10,27 @@
  * don't forget to pass a `key` prop to it to avoid the warning.
  */
 
-import React, { Component } from 'react';
+import React from 'react';
+import Product from './components/Product';
 
-class App extends Component {
-  render() {
+import products from './vschoolProducts';
+
+function App() {
+  const productsComponents = products.map(product => {
     return (
-      <div>
-
-      </div>
+      <Product key={product.id} content={{
+        name: product.name,
+        price: product.price,
+        description: product.description
+      }} />
     );
-  }
+  });
+
+  return (
+    <div className='product-list'>
+      {productsComponents}
+    </div>
+  );
 }
 
 export default App;
