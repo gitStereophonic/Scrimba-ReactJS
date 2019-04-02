@@ -38,7 +38,7 @@ class App extends Component {
     }
   }
 
-  // for optimization. if unnecessary re-render take too much
+  // for optimization. if unnecessary re-render take too much`
   // time or resources
   shouldComponentUpdate(nextProps, nextState) {
     // return true if want it to update
