@@ -1,12 +1,16 @@
 import React from "react"
 
+function handleCLick() {
+  console.log("I was pushed");
+}
+
 function App() {
   return (
     <div>
-      <img alt='pic' src="https://www.fillmurray.com/200/100" />
+      <img alt='pic' onMouseOver={() => { console.log("Hovered"); }} src="https://www.fillmurray.com/200/100" />
       <br />
       <br />
-      <button onClick="myFunction()">Click me</button>
+      <button onClick={handleCLick}>Click me</button>
     </div>
   )
 }
