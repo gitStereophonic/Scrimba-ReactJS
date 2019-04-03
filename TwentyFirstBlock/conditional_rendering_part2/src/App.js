@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Conditional from "./Conditional";
+//import Conditional from "./Conditional";
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h2>You have {this.state.unreadMessages.length} unread messages!</h2>
+        {
+          // &&
+          // first check is false - all false
+          this.state.unreadMessages.length > 0 &&
+          <h2>You have {this.state.unreadMessages.length} unread messages!</h2>
+        }
       </div>
     );
   }
