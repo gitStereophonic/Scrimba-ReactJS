@@ -1,6 +1,19 @@
+/**
+ * @author Raccoon Developer
+ * @date 04.03.2019
+ * 
+ * Challenge: Style the completed todo items differently from the incomplete items.
+ */
+
 import React from "react"
 
 function TodoItem(props) {
+  const completedStyle = {
+    fontStyle: "italic",
+    color: "#cdcdcd",
+    textDecoration: "line-through"
+  }
+
   return (
     <div className="todo-item">
       <input
@@ -8,8 +21,8 @@ function TodoItem(props) {
         checked={props.item.completed}
         onChange={() => props.handleOnChange(props.item.id)}
       />
-      <p>{props.item.text}</p>
-    </div>
+      <p style={props.item.completed ? completedStyle : null}>{props.item.text}</p>
+    </div >
   )
 }
 
