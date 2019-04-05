@@ -2,16 +2,24 @@ import React, { Component } from "react";
 
 class App extends Component {
   // Change to use class properties
-  constructor() {
-    super();
-    this.state = {
-      firstName: ""
-    };
-    this.handleChange = this.handleChange.bind(this);
+  state = {
+    firstName: ""
   }
 
+  // this allows to remove entire constructor =>
+
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     firstName: ""
+  //   };
+  //   // no longer need is for using 'this' in handleChange.
+  //   // bcs handleChange now is arrow method
+  //   //this.handleChange = this.handleChange.bind(this);
+  // }
+
   // Change to use arrow functions
-  handleChange(event) {
+  handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
       [name]: value
@@ -49,4 +57,13 @@ export default App;
  * React Router - https://reacttraining.com/react-router/core/guides/philosophy
  * React Hooks - https://reactjs.org/docs/hooks-intro.html
  * React lazy, memo, and Suspense - https://reactjs.org/blog/2018/10/23/react-v-16-6.html
+ *
+ *
+ * Practicing ideas:
+ * https://medium.freecodecamp.org/every-time-you-build-a-to-do-list-app-a-puppy-dies-505b54637a5d
+ *
+ * https://medium.freecodecamp.org/want-to-build-something-fun-heres-a-list-of-sample-web-app-ideas-b991bce0ed9a
+ *
+ * https://medium.freecodecamp.org/summer-is-over-you-should-be-coding-heres-yet-another-list-of-exciting-ideas-to-build-a95d7704d36d
  */
+
